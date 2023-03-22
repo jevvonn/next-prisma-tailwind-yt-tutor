@@ -8,7 +8,7 @@ const getOwnPosts = async () => {
   return response.data;
 };
 
-const ownPosts = () => {
+const OwnPosts = () => {
   const { data, isLoading, error } = useQuery<UserType>({
     queryFn: getOwnPosts,
     queryKey: ["own-posts"],
@@ -23,4 +23,4 @@ const ownPosts = () => {
   );
 };
 
-export default ownPosts;
+export default OwnPosts;

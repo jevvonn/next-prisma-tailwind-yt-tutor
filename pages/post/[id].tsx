@@ -29,7 +29,7 @@ const PostShow = ({ id }: { id: string }) => {
             <>
               <h2 className="text-lg font-semibold">All Comments</h2>
               {data.comments.map((cmt) => (
-                <Comments {...cmt} />
+                <Comments key={cmt.id} {...cmt} />
               ))}
             </>
           ) : null}
